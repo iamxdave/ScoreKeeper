@@ -1,0 +1,99 @@
+html {
+    font-family: 'Roboto Mono', monospace;
+}
+body, main {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+}
+body {
+    background-color: black;
+}
+main {
+    width: 80%;
+    background: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80") no-repeat center/cover;
+    font-family: 'Roboto Mono', monospace;
+}
+
+section {
+    width: 100%;
+    max-width: 600px;
+}
+
+#scoreboard {
+}
+
+#container {
+    background-color: #080705;
+    border: 2px solid #11D147;
+    color: whitesmoke;
+}
+
+#title {
+    color: #9254CC;
+    font-weight: 700;
+    letter-spacing: 5px;
+    border-bottom: 1px white solid;
+}
+#usage--text{
+    font-weight: 400;
+    font-style: italic;
+}
+#max--score {
+    background-color: #0DA338;
+    border: 2px solid #0A7728;
+    color: whitesmoke;
+    font-weight: 700;
+    max-width: 100%;
+}
+
+#max--score::placeholder {
+    color: whitesmoke;
+    font-weight: 700;
+    opacity: 0.85;
+}
+
+#btn--panel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom--btn {
+    font-weight: 700;
+    height: 50px;
+    flex-grow: 1;
+    transition: 0.5s;
+}
+
+.bottom--btn:hover {
+    font-size: larger;
+}
+#btn--p1 {
+    background-color: #FF990A;
+    
+}
+#btn--p1:hover {
+    background-color: #AA5200;
+}
+
+#btn--p2 {
+    background-color: #9254CC;
+    
+}
+#btn--p2:hover {
+    background-color: #5D2A8D;
+}
+
+#btn--rst {
+    background-color: #D60E0A;
+}
+
+#btn--rst:hover {
+    background-color: #8A0906;
+}
+
+@media (max-width: 576px) {
+    main {
+        width: 100%;
+    }
+}
