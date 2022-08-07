@@ -19,6 +19,10 @@ section {
     width: 100%;
     max-width: 600px;
 }
+#reset {
+    color: #D60E0A;
+    font-size: larger;
+}
 
 #scoreboard {
 }
@@ -35,10 +39,20 @@ section {
     letter-spacing: 5px;
     border-bottom: 1px white solid;
 }
+
+#text--panel{
+    padding-bottom: 3rem;
+}
+
 #usage--text{
     font-weight: 400;
     font-style: italic;
 }
+
+#left--input--text {
+    transition: all .2s ease-in-out;
+}
+
 #max--score {
     background-color: #0DA338;
     border: 2px solid #0A7728;
@@ -51,6 +65,11 @@ section {
     color: whitesmoke;
     font-weight: 700;
     opacity: 0.85;
+}
+
+#alert {
+    display: none;
+    transition: all .4s ease-in-out;
 }
 
 #btn--panel {
@@ -96,4 +115,9 @@ section {
     main {
         width: 100%;
     }
+}
+
+.text--animation {
+    transform: scale(1.01);
+    color: red;
 }

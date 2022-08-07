@@ -17,13 +17,14 @@
             <div id="container" class="mt-5">
                 <img class="img-fluid" src="https://images.unsplash.com/photo-1533237264985-ee62f6d342bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="Scoreboard">
                 <h3 id="title" class="px-2 px-sm-3 py-3 text-sm-start text-center">Score Keeper</h2>
-                <div class="px-3 pb-5">
-                    <h1 id="scoreboard">0 to 0</h1>
+                <div id="text--panel" class="px-3">
+                    <h1 id="scoreboard"><span id="st--score">0</span> to <span id="nd--score">0</span></h1>
                     <p id="usage--text">Use the buttons below to keep score</p>
-                    <div class="d-flex flex-wrap">
-                        <h4 class="pe-3 mb-sm-0">Playing up to</h5>
+                    <div class="d-flex flex-wrap mb-3">
+                        <h4 id="left--input--text" class="me-3 mb-sm-0">Playing up to</h4>
                         <input type="number" name="max--score" id="max--score" placeholder="7">
                     </div>
+                    <p id="alert">Please <span id="reset">RESET</span> to start counting again!</p>
                 </div>
                 <div id="btn--panel">
                     <button id="btn--p1" class="bottom--btn">+1 Player One</button>
