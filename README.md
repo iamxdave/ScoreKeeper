@@ -32,7 +32,8 @@
 
 <!-- ABOUT -->
 ## About 🤔
-Application is the result of a small project while passing through a Javascript session in one of the [udemy](https://www.udemy.com/course/the-web-developer-bootcamp/) courses and was made by me during my first encounter with JS 😮‍💨. That's not how exactly it should looks like, but what would be a project that has not been extended in any way? 🤭<br/>
+Application is the result of a small project while passing through a Javascript session in one of the [udemy](https://www.udemy.com/course/the-web-developer-bootcamp/) courses and was made by me during my first encounter with JS 😮‍💨. <br/>
+That's not how exactly it should looks like, but what would be a project that has not been extended in any way? 🤭<br/>
 
 
 
