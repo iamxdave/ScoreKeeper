@@ -58,7 +58,8 @@ section {
     border: 2px solid #0A7728;
     color: whitesmoke;
     font-weight: 700;
-    max-width: 100%;
+    width: 20%;
+    min-width: 115px;
 }
 
 #max--score::placeholder {

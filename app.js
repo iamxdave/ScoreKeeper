@@ -1,8 +1,16 @@
-const maxScore = document.querySelector('#max--score');
-const textPanel = document.querySelector('#text--panel');
-const leftText = document.querySelector("#left--input--text");
+
 const scoreAlert = document.querySelector('#alert');
+
+const textPanel = document.querySelector('#text--panel');
 const btnPanel = document.querySelector('#btn--panel');
+
+const scoreLimit = {
+    placeholder: document.querySelector('#max--score'),
+    leftText: {
+        display: document.querySelector("#left--input--text"),
+        animationClass: 'text--animation'
+    }
+}
 
 const playerOne = {
     score: 0,
@@ -22,7 +30,9 @@ let gameOver = false;
 
 const changePoints = (first, second) => {
     
-    if(maxScore.value == '') {
+    const limit = scoreLimit.placeholder.value;
+
+    if(limit == '') {
         cssWhenPlaceholderEmpty();
     } else {
         
@@ -31,7 +41,7 @@ const changePoints = (first, second) => {
             updateScore(first);
         }
 
-        if(first.score >= maxScore.value) {
+        if(first.score >= limit) {
 
             setPlayerScoreColor(first, '#0DA338');
             setPlayerScoreColor(second, '#D60E0A');
@@ -54,14 +64,22 @@ const resetPoints = () => {
     setPlayerScoreColor(playerTwo, 'whitesmoke');
 
     closeDisplayResetAlert();
-    
+
+    setTimeout(() => popUpGameStart(400), 200);
+}
+
+const popUpGameStart = (time) => {
+    if(gameOver){
+        const display = scoreLimit.leftText.display;
+        const animation = scoreLimit.leftText.animationClass;
+
+        display.classList.add(animation);
+        setTimeout(() => display.classList.remove(animation), time);
+    }
+
     gameOver = false;
 }
 
-const cssWhenPlaceholderEmpty = () => {
-    leftText.classList.add('text--animation');
-    setTimeout(() => leftText.classList.remove('text--animation'), 400);
-}
 const updateScore = (player) => player.display.innerText = player.score;
 const setPlayerScoreColor = (player, color) => player.display.style.color = color;
 
