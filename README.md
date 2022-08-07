@@ -1,6 +1,6 @@
 <h1 align="center">ScoreKeeper 🎲</h1>
 <p align="center">
- Simple responsive Javascript-CSS-HTML web application to count scores for two players
+ Simple responsive Javascript-CSS-HTML web application to count scores for two players.<br/>
  The application meets the assumptions of good coding practics (I think 😊).
 </p>
 <br/>
