@@ -77,7 +77,7 @@ cd ScoreKeeper
 <!-- HOW DOES IT WORK-->
 ## How does it work 📔
 <p>
-  The application allows the user to store and remember two scores of both players.
+  The application allows the user to store and remember two scores of both players. That's it!
 </p>
   
 
